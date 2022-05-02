@@ -8,12 +8,12 @@ module "ec2_instance" {
 
   name = "single-instance"
 
-  ami                    = "ami-04505e74c0741db8d"
+  ami                    = "ami-0756a1c858554433e"
   instance_type          = "t2.micro"
-  key_name               = "vpectesting"
+  key_name               = "Dhanotia"
   monitoring             = true
-  vpc_security_group_ids = ["sg-026e6de718633f70f"]
-  subnet_id              = "subnet-0ac4be71aa723b6f6"
+  vpc_security_group_ids = ["sg-01fbc1668c1fbecba"]
+  subnet_id              = "subnet-0f96b6977ad071f5b"
     user_data = <<-EOF
               #!/bin/bash
               echo "Hello, World" > index.html
